@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formularios</title>
+  <style>
+    input:valid {
+      border: 2px solid green;
+    }
+    input:invalid {
+      border: 2px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formularios en HTML me gusta!!! 
+  </h1>
+  <p>Esta extensión me la guardo!!!</p>
+  <form action="https://formspree.io/miguel@desarrolloweb.com" method="post">
+    <input type="hidden" name="idcontacto" value="3344555">
+    <p>
+      <label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" size="40" maxlength="30">
+    </p>
+    <p>
+      <label for="nombre">Apellidos: </label> <input type="text" name="apellidos" id="apellidos" required placeholder="Escribe tus apellidos" size="40" maxlength="30">
+    </p>
+    <p>
+      <label for="emailusuario">Email:</label> <input type="email" name="email" id="emailusuario" value="malvarez@desarrolloweb.com">
+    </p>
+
+    <p>
+      <input type="checkbox" name="Actuacion urgente" id="urgente" value="Es Urgente" checked> <label for="urgente">Marca si es urgente</label> 
+    </p>
+    <p>
+      <input type="radio" name="asunto" value="error" id="asuntoerror"> <label for="asuntoerror">Error encontrado</label>
+      <br>
+      <input type="radio" name="asunto" value="soporte" id="asuntosoporte" checked> <label for="asuntosoporte">Soporte técnico</label>
+      <br>
+      <input type="radio" name="asunto" value="comentario" id="asuntocomentario"> <label for="asuntocomentario">Envío de comentario</label>            
+    </p>
+    <p>
+      <label for="so">Sistema Operativo:</label>
+      <br>
+      <select name="Sistema Operativo" id="so">        
+        <option value="Windows">Windows</option>
+        <option value="Linux" selected>Linux</option>
+        <option value="Mac">Mac OS X</option>
+      </select>
+    </p>
+    <p>
+      <label for="coment">Comentarios:</label>
+      <br>
+      <textarea name="comentarios" id="coment" cols="50" rows="6">Comentanos...
+texto predeterminado</textarea>
+    </p>
+    <p>
+      <label for="url">Escribe la URL relacionada:</label>
+      <input type="text" name="url" id="url" pattern="http:\/\/.+">
+    </p>
+    <p>
+      <label for="daterespuesta">Respuesta hasta el:</label>
+      <input type="date" name="fecha" id="daterespuesta"> (formato dd/mm/aaaa)
+    </p>
+    <p>
+      <input type="submit" value="Enviar...">
+      <input type="reset" value="Borrar">
+    </p>
+  </form>
+</body>
+</html>
