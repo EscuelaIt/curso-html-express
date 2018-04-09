@@ -1,0 +1,104 @@
+body {
+  background-color: #f5f5f0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header {
+  background-color: #ddd;
+  padding: 10px;
+}
+header nav {
+  margin-top: 10px;
+  font-size: 12px;
+}
+header img {
+  width: 48px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+h1 {
+  font-size: 18px;
+  display: inline;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+article {
+  background-color: #def;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+article img {
+  width: 100%;
+  max-width: 350px;
+}
+
+footer {
+  background-color: #333;
+  text-align: right;
+  padding: 5px 15px;
+}
+footer a {
+  color: rgb(235, 214, 191);
+  font-size: 12px;
+}
+
+
+@media (min-width: 640px) {
+  #maincontent {
+    display: flex;
+  }
+  article {
+    padding: 25px;
+  }
+  main {
+    margin-right: 20px;
+  }
+  aside {
+    margin-top: 10px;
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 770px) {
+  article img {
+    float: right;
+    width: 35%;
+    margin: -25px 20px 10px 100px;
+    max-width: 200px;
+  }
+}
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  background-image: url('../images/chevron-arrow-up.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  background-color: #f5f5f5;
+  box-shadow: 2px 2px 10px #666;
+  border-radius: 24px;
+}
