@@ -18,7 +18,10 @@
   <h1>Formularios en HTML me gusta!!! 
   </h1>
   <p>Esta extensión me la guardo!!!</p>
-  <form action="https://formspree.io/miguel@desarrolloweb.com" method="post">
+  <form action="http://cgi.curso-html.com/FormMail.pl" method="post">
+    <input type="hidden" name="recipient" value="miguel@curso-html.com">
+    <input type="hidden" name="redirect" value="http://www.curso-html.com/gracias.html">
+    <input type="hidden" name="subject" value="Formulario de contacto escuelait">
     <input type="hidden" name="idcontacto" value="3344555">
     <p>
       <label for="nombre">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" size="40" maxlength="30">
