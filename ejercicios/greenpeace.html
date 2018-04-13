@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Donaciones en Greenpeace</title>
+  <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  section {
+    background-color: #eee;
+    border-top: 4px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    border-bottom: 2px dotted #ccc;
+    padding-bottom: 15px;
+  }
+  h2 span {
+    display: inline-block;
+    background-color: #393;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .campo {
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .campo label {
+    margin-right: 15px;
+    width: 200px; 
+    text-align: right;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  .metodopago {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .metodopago img {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .alternativapago {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .enviar {
+    margin-left: 220px;
+  }
+  .enviar input {
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid #b83a10;
+    cursor: pointer;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffac63+2,f2801d+50,ed4209+99 */
+    background: #ffac63; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffac63 2%, #f2801d 50%, #ed4209 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffac63 2%,#f2801d 50%,#ed4209 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffac63 2%,#f2801d 50%,#ed4209 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffac63', endColorstr='#ed4209',GradientType=0 ); /* IE6-9 */
+  }
+  </style>
+</head>
+<body>
+  <h1>Donaciones en Greenpeace</h1>
+  <section>
+    <h2><span>1</span> Elige cantidad de tu donación</h2>
+    <div class="campo">
+      <label for="moneda">Moneda</label>
+      <div>
+        <select name="moneda" id="moneda">
+          <option value="Euro">euro</option>
+          <option value="USD">Dólares americanos</option>
+          <option value="Peso Mexicano">Peso Mexicano</option>
+        </select>
+      </div>
+    </div>
+    <div class="campo">
+      <label>Cantidad</label>
+      <div>
+        <ul>
+          <li><input type="radio" name="Cantidad" value="500"> 500</li>
+          <li><input type="radio" name="Cantidad" value="200"> 200</li>
+          <li><input type="radio" name="Cantidad" value="100"> 100</li>
+          <li><input type="radio" name="Cantidad" value="50"> 50</li>
+        </ul>
+        <div>
+          <input type="radio" name="Cantidad" value="otra"> 
+          Otra: 
+          <input type="text" name="cantidad otra">
+        </div>
+      </div>
+    </div>
+    <div class="campo">
+      <label>Tipo de donación</label> 
+      <div>
+        <input type="radio" name="tipo donacion" value="una vez" checked> Una vez
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>
+      <span>2</span> Introduce tus datos personales
+    </h2>
+    <div class="campo">
+      <label for="tratamiento">Tratamiento</label>
+      <div>
+        <select name="tratamiento" id="tratamiento">
+          <option value="Sr">Sr</option>
+          <option value="Sra">Sra</option>
+          <option value="Srta">Srta</option>
+          <option value="Excelentísimo">Excelentísimo</option>
+        </select>
+      </div>
+    </div>
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <div>
+        <input type="text" name="nombre" id="nombre">
+      </div>
+    </div>
+    <div class="campo">
+      <label for="apellidos">Apellidos</label>
+      <div>
+        <input type="text" name="apellidos" id="apellidos">
+      </div>
+    </div>
+    <div class="campo">
+        <label for="email">Email:</label>
+        <div>
+          <input type="email" name="email" id="email">
+        </div>
+      </div>
+      <div class="campo">
+        <label></label>
+        <div>
+          <input type="checkbox" name="enviar novedades" id="aceptamailing"> Acepto recibir email
+        </div>
+      </div>
+      <div class="campo">
+        <label for="direccion">Dirección:</label>
+        <div>
+          <input type="text" name="direccion" id="direccion">
+        </div>
+      </div>
+      <div class="campo">
+        <label for="pais">País</label>
+        <div>
+          <select name="pais" id="pais">
+            <option value="España">España</option>
+            <option value="Argentina">Argentina</option>
+            <option value="México">México</option>
+            <option value="Perú">Perú</option>
+          </select>
+        </div>
+      </div>
+  </section>
+  <section>
+    <h2>
+      <span>3</span>
+      Elige el método de pago
+    </h2>
+    <div class="campo">
+      <div>
+          <a href="#" class="metodopago" data-target="alternativatarjeta">
+              <img src="./images/card.png" alt="Pago con tarjeta">
+              Pago con tarjeta
+            </a>
+      </div>
+    </div>
+      <div class="alternativapago" id="alternativatarjeta">
+          <div class="campo">
+            <label></label>
+            <ul>
+              <li><img src="./images/amex_small.png" alt="Tarjetas admitida american"></li>
+              <li><img src="./images/mc_small.png" alt="Tarjetas admitida mastercard"></li>
+              <li><img src="./images/visa_small.png" alt="Tarjetas admitida visa"></li>
+            </ul>
+          </div>
+          <div class="campo">
+            <label for="Tarjeta">Número tarjeta:</label>
+            <div>
+              <input type="text" name="Tarjeta" id="Tarjeta">
+            </div>
+          </div>
+          <div class="campo">
+            <label for="Tarjetanombre">Nombre:</label>
+            <div>
+              <input type="text" name="Tarjetanombre" id="Tarjetanombre">
+            </div>
+          </div>
+          <div class="campo">
+            <label>Expiracion:</label>
+            <div>
+              <select name="expiracionmes" id="expiracionmes">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              /
+              <select name="expiracionano" id="expiracionano">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option> 
+              </select>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="cvc">CVC/CVV/CID:</label>
+            <div>
+              <input type="text" name="cvc" id="cvc">
+            </div>
+          </div>
+          <div class="enviar">
+            <input type="submit" value="Donar">
+          </div>
+        </div>
+
+
+    </div>
+    <div class="campo">
+      <div>
+          <a href="#" class="metodopago" data-target="alternativapaypal">
+            <img src="./images/paypal.png" alt="Pago con paypal">
+            Pago con paypal
+          </a>
+      </div>
+    </div>
+      <div class="alternativapago" id="alternativapaypal">
+        <p>Para pagar con Paypal vamos a redirigirle al sitio de Paypal. Al completar el proceso de pago volverá a nuestro sitio y podrá verificar su donación.
+        </p>
+        <div class="enviar">
+          <input type="submit" value="Donar con Paypal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script>
+  $(function() {
+    $('.metodopago').on('click', function(e) {
+      e.preventDefault();
+      var elem = $(this);
+      var idTarget = elem.data('target');
+      $('#' + idTarget).toggle(500);
+    })
+  })
+  </script>
+</body>
+</html>
